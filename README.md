@@ -1,5 +1,5 @@
 # AI-vs-AI
-Building an Intelligent Detecter Against “Made Up” Content
+Building an Intelligent Detecter Against “AI-Generated Content” Content
 With the continuous evolution of Artificial Intelligence, distinguishing between real and AI generated content has been a challenge. This project has a detection system with the capability of distinguishing whether a certain image, audio, video, or a live broadcast has been altered or generated by AI.
 
 ## Goal
