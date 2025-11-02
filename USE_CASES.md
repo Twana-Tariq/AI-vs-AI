@@ -156,7 +156,7 @@
 
 ---
 
-## 3. UML Use Case Diagram
+# 3. UML Use Case Diagram
 
 The following UML diagram represents all four use cases and their relationships with system actors.
 
