@@ -71,3 +71,53 @@
 | **Postconditions** | User receives detection results localized in their chosen language. |
 | **Alternate Flow(s)** | - If language is unsupported, system falls back to English.<br>- If translation module fails, an error is shown. |
 
+## UML Diagrams for All 4 Use Cases
+
+### UC-01: Detect AI-Generated Content
+```plantuml
+@startuml
+actor "End User" as User
+actor "External AI Detection Engine" as Engine
+
+rectangle "AI Content Detector System" {
+    usecase "UC-01: Detect AI-Generated Content" as UC1
+}
+
+User --> UC1
+UC1 --> Engine
+@enduml
+@startuml
+actor "End User" as User
+actor "Administrator" as Admin
+
+rectangle "AI Content Detector System" {
+    usecase "UC-02: View Trending Content Verification" as UC2
+}
+
+User --> UC2
+Admin --> UC2
+@enduml
+@startuml
+actor "End User" as User
+actor "AI Chat Assistant" as Assistant
+
+rectangle "AI Content Detector System" {
+    usecase "UC-03: Explain Detection Results" as UC3
+}
+
+User --> UC3
+UC3 --> Assistant
+@enduml
+@startuml
+actor "End User" as User
+actor "External AI Detection Engine" as Engine
+
+rectangle "AI Content Detector System" {
+    usecase "UC-04: Multi-Language Detection" as UC4
+}
+
+User --> UC4
+UC4 --> Engine
+@enduml
+
+
