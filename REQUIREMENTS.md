@@ -1,3 +1,59 @@
+# Role 1:Requirments Elicitation Lead
+
+## 1. Elicitation Techniques Used
+Two main techniques were used to gather system requirements:
+
+### a- Online Survey
+A Google Form survey was distributed (students, professionals, and social media users) to understand how often they encounter AI-generated content and their need for a detection system.  
+
+**Key Findings:**
+- 60% encounter AI-generated content 1–5 times a day.  
+- 85% have seen AI-generated images; 70% text; 55% videos; 40% audio.  
+- Average confidence in identifying AI content: **2.3/5** (low).  
+- 93% of users are interested in using a detection app or website.  
+- 100% of respondents consented to use their responses for academic purposes.  
+
+**Insight:**  
+Users strongly need a reliable system that detects AI-generated content across multiple media types (text, image, video, audio).
+
+### b- Team Brainstorming Session
+The team held a brainstorming meeting to discuss potential features and technical feasibility.  
+
+**Brainstorming Outcomes:**
+- The system should detect **text, image, video, and audio** AI content.  
+- The system must have a **clean, fast, and multilingual interface**.  
+- Include an **AI assistant** to explain detection results clearly.  
+- Add a **“Trending Content Verification”** page to check viral posts.  
+- Ensure **accuracy**, **real-time response**, and **integration** between frontend and backend.  
+
+**Insight:**  
+The brainstorming helped refine the main functions and performance goals.
+
+## 2. Stakeholders Identified
+- **End Users:** People who consume online media and want to verify its authenticity.  
+- **Developers:** Team members responsible for building and maintaining the system.  
+- **University / Supervisor:** Evaluates the project’s academic and technical quality.  
+- **Researchers / Media Analysts:** May use the system to study AI-generated content trends.  
+
+## 3. Raw Requirements List (from stakeholders' perspective)
+
+### Functional Requirements (FR):
+1. The system shall detect AI-generated **text, audio, image, and video** content.  
+2. The system shall provide **detailed detection results** with an AI chat assistant.  
+3. The system shall have a **Trending Content Verification** page.  
+4. The system shall allow **frontend and backend integration** for smooth operation.  
+5. The system shall support **multiple languages**.  
+
+### Non-Functional Requirements (NFR):
+1. The system shall provide **high accuracy** in detection.  
+2. The system shall have a **modular and scalable architecture**.  
+3. The system shall offer **real-time performance**.  
+4. The system shall provide a **good UI/UX design** for users.  
+
+## 4. Summary
+Through **surveys** and **brainstorming**, the team gathered valuable insights from users and stakeholders.  
+The results showed a **clear demand** for a trustworthy and easy-to-use AI content detection system that works across different media types, languages, and devices.
+
 ### Role 2: Requirements Classification Specialist 
 
 | ID | Requirement Description | Type | Level |
