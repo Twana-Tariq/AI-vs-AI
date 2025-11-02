@@ -11,7 +11,7 @@
 # AI Content Detector – Use Cases
 
 
-## 2. Detailed Use Cases
+## 4. Detailed Use Cases
 
 ### **UC-01: Detect AI-Generated Content**
 
