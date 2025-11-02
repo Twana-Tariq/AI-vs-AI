@@ -73,7 +73,7 @@
 
 ## UML Diagrams for All 4 Use Cases
 
-### UC-01: Detect AI-Generated Content
+
 ```plantuml
 @startuml
 actor "End User" as User
