@@ -104,3 +104,71 @@ The following table priortizes all requirements with its priority and justificat
 | **NFR8** | Show error messages for unsupported files | **N** | Enhances user experience but not system's core functions. |
 | **NFR9** | Multi-language support | **S** | Adds unnecessary complexity and translation work at this stage. |
 | **NFR10** | AI chat assistant explaining results | **S** | Interesting future feature but unrealistic considering our limited resources. |
+
+
+### FR1 – Detect AI-Generated Text
+
+*Description:*  
+The system should analyze a text file or paragraph and determine whether it was written by a human or AI.
+
+*Input:*  
+Text file (.txt, .docx) or raw paragraph input from the user.
+
+*Process:*  
+The backend sends the input text to a pre-trained RoBERTa-based detector model from Hugging Face.  
+The model calculates a probability score for “AI-generated” vs “Human-written” and returns the result.
+
+*Output:*  
+Display the result to the user as “AI-generated” or “Human-written” with confidence percentage.
+
+*Preconditions:*  
+User must upload a valid text file or enter text directly.
+
+*Postconditions:*  
+The result is stored in the database for future validation.
+
+---
+
+### FR2 – Detect AI-Generated Image
+
+*Description:*  
+The system should detect whether an uploaded image is AI-generated or real.
+
+*Input:*  
+Image file (.jpg, .png).
+
+*Process:*  
+The backend uses the deepfake-detector-model-v1 to analyze the image for artifacts typical of synthetic content.  
+The model returns a classification label.
+
+*Output:*  
+Result displayed to user as “AI-generated” or “Real image”.
+
+*Preconditions:*  
+User must upload a valid image format.
+
+*Postconditions:*  
+Detection result stored in the database; image deleted from server for privacy.
+
+---
+
+### FR3 – Display Detection Results
+
+*Description:*  
+After any detection process, the system should display the results clearly to the user interface.
+
+*Input:*  
+Result data from the detection engine (label + confidence score).
+
+*Process:*  
+Frontend receives JSON response from backend API.  
+It formats the output and presents it to the user on the results page.
+
+*Output:*  
+Display of the detection result and confidence score (e.g., “AI-generated, 94% confidence”).
+
+*Preconditions:*  
+A detection must have been performed successfully.
+
+*Postconditions:*  
+Result is visible to user; option available to save or share result.
